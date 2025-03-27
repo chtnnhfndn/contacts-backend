@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "contacts-backend"
+version = "0.1.0"
+description = "Backend for Contacts - A privacy-first social networking platform"
+authors = ["Chaitanya Mittal <chtnnha@chtnnhfoundation.org>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.0"
+uvicorn = "^0.25.0"
+supabase = "^2.3.0"
+pydantic = "^2.6.1"
+pydantic-settings = "^2.1.0"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+python-multipart = "^0.0.9"
+email-validator = "^2.1.1"
+phonenumbers = "^8.13.27"
+qrcode = "^7.4.2"
+nfcpy = "^1.0.4"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+httpx = "^0.26.0"
+asynctest = "^0.13.0"
+mypy = "^1.8.0"
+ruff = "^0.2.1"
+black = "^24.1.1"
+flake8 = "^7.0.0"
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true

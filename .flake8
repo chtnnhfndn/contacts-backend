@@ -1,0 +1,12 @@
+[flake8]
+max-line-length = 120
+exclude = .git,__pycache__,.venv,venv,*/migrations/*,*/static/*,*/media/*
+ignore = E203,W503
+per-file-ignores =
+    __init__.py:F401,F403
+    */tests/*:E501
+    */settings.py:E501
+max-complexity = 10
+extend-immutable-calls = Depends, Path
+extend-select = B950
+select = C,E,F,W,B,B950
